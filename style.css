@@ -1,19 +1,43 @@
 body {
-
+    height: 90vh;
+    width: 190vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(0, 77, 56);
 } 
 
 .innhold {
-
-}
-
-.game {
-
+    width: 40vh;
+    height: 40vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rosybrown;
+    border-radius: 40px;
 }
 
 .btbg {
+    width: 17vh;
+    height: 11.5vh;
+    background-color: royalblue;
+    border-radius: 20px;
+}
 
+.knapp {
+    width: 20vh;
+    align-items: center;
+    margin: auto;
+    position: relative;
+    text-align: center;
+    top: 30%;
 }
 
 .btn {
-    
+    border: 2px solid palevioletred;
+    padding: 20px 40px;
+}
+
+.btn:hover {
+    background: palevioletred;
 }

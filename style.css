@@ -8,35 +8,44 @@ body {
 } 
 
 .innhold {
-    width: 40vh;
-    height: 40vh;
+    width: 70vh;
+    height: 60vh;
     display: flex;
     align-items: center;
     justify-content: center;
     background-color: rgb(57, 0, 77);
     border-radius: 40px;
+    flex-direction: column;
 }
 
 .btbg {
-    width: 30vh;
-    height: 20vh;
+    width: 50vh;
+    height: 40vh;
     background-color: rgb(102, 0, 102);
     border-radius: 20px;
+    position: absolute;
+    top: 26%;
+}
+
+.btbg h1 {
+    display: flex;
+    justify-content: center;
 }
 
 .knapp {
-    width: 25vh;
+    width: 40vh;
     align-items: center;
     margin: auto;
     position: relative;
     text-align: center;
-    top: 20%;
+    top: 2.5%;
 }
 
 .btn {
     border: 2px solid rgb(201, 9, 121);
-    padding: 25px 50px;
+    padding: 55px 75px;
     background-color: rgb(0, 0, 51);
+    margin: 0px;
 }
 
 .btn:hover {

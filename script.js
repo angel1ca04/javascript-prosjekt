@@ -11,18 +11,54 @@ var clicked7 = false
 var clicked8 = false
 var clicked9 = false
 
+var box1 = ""
+var box2 = ""
+var box3 = ""
+var box4 = ""
+var box5 = ""
+var box6 = ""
+var box7 = ""
+var box8 = ""
+var box9 = ""
+
+
+function three_in_row_check(c) {
+
+    // first row
+    if (box1 == c && box2 == c && box3 == c) {
+
+    }
+    // second row
+    if (box4 == c && box5 == c && box6 == c) {
+
+    }
+    // third row
+    if (box7 == c && box8 == c && box9 == c) {
+
+    }
+
+
+}
+
+
+three_in_row_check("X")
+three_in_row_check("O")
+
 
 function buttonclick1(btnid){
     document.getElementById("btn1").style.backgroundImage = "url('x.png')";
     clicked1 = true
     turn = 2
     allturns +=1
+    box1 = "X"
+
 }
 function buttonclick2(btnid){
     document.getElementById("btn2").style.backgroundImage = "url('x.png')";
     clicked2 = true
     turn = 2
     allturns +=1
+    box2 = "X"
 }
 
 function buttonclick3(btnid){
@@ -30,6 +66,7 @@ function buttonclick3(btnid){
     clicked3 = true
     turn = 2
     allturns +=1
+    box3 = "X"
 }
 
 function buttonclick4(btnid){
@@ -37,6 +74,7 @@ function buttonclick4(btnid){
     clicked4 = true
     turn = 2
     allturns +=1
+    box4 = "X"
 }
 
 function buttonclick5(btnid){
@@ -44,6 +82,7 @@ function buttonclick5(btnid){
     clicked5 = true
     turn = 2
     allturns +=1
+    box5 = "X"
 }
 
 function buttonclick6(btnid){
@@ -51,6 +90,7 @@ function buttonclick6(btnid){
     clicked6 = true
     turn = 2
     allturns +=1
+    box6 = "X"
 }
 
 function buttonclick7(btnid){
@@ -58,6 +98,7 @@ function buttonclick7(btnid){
     clicked7 = true
     turn = 2
     allturns +=1
+    box7 = "X"
 }
 
 function buttonclick8(btnid){
@@ -65,6 +106,7 @@ function buttonclick8(btnid){
     clicked8 = true
     turn = 2
     allturns +=1
+    box8 = "X"
 }
 
 function buttonclick9(btnid){
@@ -72,6 +114,7 @@ function buttonclick9(btnid){
     clicked9 = true
     turn = 2
     allturns +=1
+    box9 = "X"
 }
 
 var bb = setInterval(random,100);
@@ -84,6 +127,7 @@ function random() {
             clicked1 = true
             turn = 1
             allturns +=1
+            box1 = "O"
         }
 
         else if(tall == 1 && clicked2 == false) {
@@ -91,6 +135,7 @@ function random() {
             clicked2 = true
             turn = 1
             allturns +=1
+            box2 = "O"
         }
 
         else if(tall == 2 && clicked3 == false) {
@@ -98,6 +143,7 @@ function random() {
             clicked3 = true
             turn = 1
             allturns +=1
+            box3 = "O"
         }
 
         else if(tall == 3 && clicked4 == false) {
@@ -105,6 +151,7 @@ function random() {
             clicked4 = true
             turn = 1
             allturns +=1
+            box4 = "O"
         }
 
         else if(tall == 4 && clicked5 == false) {
@@ -112,6 +159,7 @@ function random() {
             clicked5 = true
             turn = 1
             allturns +=1
+            box5 = "O"
         }
 
         else if(tall == 5 && clicked6 == false) {
@@ -119,6 +167,7 @@ function random() {
             clicked6 = true
             turn = 1
             allturns +=1
+            box6 = "O"
         }
 
         else if(tall == 6 && clicked7 == false) {
@@ -126,6 +175,7 @@ function random() {
             clicked7 = true
             turn = 1
             allturns +=1
+            box7 = "O"
         }
 
         else if(tall == 7 && clicked8 == false) {
@@ -133,6 +183,7 @@ function random() {
             clicked8 = true
             turn = 1
             allturns +=1
+            box8 = "O"
         }
 
         else if(tall == 8 && clicked9 == false) {
@@ -140,6 +191,7 @@ function random() {
             clicked9 = true
             turn = 1
             allturns +=1
+            box9 = "O"
         }
 
         else if (allturns >= 9) {

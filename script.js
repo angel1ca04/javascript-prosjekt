@@ -26,31 +26,60 @@ function three_in_row_check(c) {
 
     // first row
     if (box1 == c && box2 == c && box3 == c) {
-
+            console.log("somone won")
     }
     // second row
     if (box4 == c && box5 == c && box6 == c) {
-
+        console.log("somone won")
     }
     // third row
     if (box7 == c && box8 == c && box9 == c) {
-
+        console.log("somone won")
     }
-
+    // first horizonta
+    if (box1 == c && box4 == c && box7 == c) {
+        console.log("somone won")
+    }
+    // second horizontal line
+    if (box2 == c && box5 == c && box8 == c) {
+        console.log("somone won")
+    }
+    // third horizontal line
+    if (box3 == c && box6 == c && box9 == c) {
+        console.log("somone won")
+    }
+    //  line down to the right
+    if (box1 == c && box5 == c && box9 == c) {
+        console.log("somone won")
+    }
+    // line down to the left
+    if (box3 == c && box5 == c && box7 == c) {
+        console.log("somone won")
+    }
 
 }
 
 
-three_in_row_check("X")
-three_in_row_check("O")
+var aa = setInterval(testwin,100);
+function testwin() { 
+    
+    
+    three_in_row_check("X")
+    three_in_row_check("O")
+
+}
 
 
 function buttonclick1(btnid){
-    document.getElementById("btn1").style.backgroundImage = "url('x.png')";
-    clicked1 = true
-    turn = 2
-    allturns +=1
-    box1 = "X"
+    if(clicked1 ==false) {
+        document.getElementById("btn1").style.backgroundImage = "url('x.png')";
+        clicked1 = true
+        turn = 2
+        allturns +=1
+        box1 = "X"
+    } else {
+        window.alert("alrdy clicked")
+    }
 
 }
 function buttonclick2(btnid){

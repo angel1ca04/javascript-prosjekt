@@ -26,37 +26,109 @@ function three_in_row_check(c) {
 
     // first row
     if (box1 == c && box2 == c && box3 == c) {
-            console.log("somone won")
+        if(c == "X"){
+            window.alert("You won")
+        }
+        else if(c == "O"){
+            window.alert("You lose")
+        }
+        else {
+            window.alert("Draw")
+        }
+        location.reload();
     }
     // second row
     if (box4 == c && box5 == c && box6 == c) {
-        console.log("somone won")
+        if(c == "X"){
+            window.alert("You won")
+        }
+        else if(c == "O"){
+            window.alert("You lose")
+        }
+        else {
+            window.alert("Draw")
+        }
+        location.reload();
     }
     // third row
     if (box7 == c && box8 == c && box9 == c) {
-        console.log("somone won")
+        if(c == "X"){
+            window.alert("You won")
+        }
+        else if(c == "O"){
+            window.alert("You lose")
+        }
+        else {
+            window.alert("Draw")
+        }
+        location.reload();
     }
     // first horizonta
     if (box1 == c && box4 == c && box7 == c) {
-        console.log("somone won")
+        if(c == "X"){
+            window.alert("You won")
+        }
+        else if(c == "O"){
+            window.alert("You lose")
+        }
+        else {
+            window.alert("Draw")
+        }
+        location.reload();
     }
     // second horizontal line
     if (box2 == c && box5 == c && box8 == c) {
-        console.log("somone won")
+        if(c == "X"){
+            window.alert("You won")
+        }
+        else if(c == "O"){
+            window.alert("You lose")
+        }
+        else {
+            window.alert("Draw")
+        }
+        location.reload();
     }
     // third horizontal line
     if (box3 == c && box6 == c && box9 == c) {
-        console.log("somone won")
+        if(c == "X"){
+            window.alert("You won")
+        }
+        else if(c == "O"){
+            window.alert("You lose")
+        }
+        else {
+            window.alert("Draw")
+        }
+        location.reload();
     }
     //  line down to the right
     if (box1 == c && box5 == c && box9 == c) {
-        console.log("somone won")
+        if(c == "X"){
+            window.alert("You won")
+        }
+        else if(c == "O"){
+            window.alert("You lose")
+        }
+        else {
+            window.alert("Draw")
+        }
+        location.reload();
     }
     // line down to the left
     if (box3 == c && box5 == c && box7 == c) {
-        console.log("somone won")
+        if(c == "X"){
+            window.alert("You won!")
+        }
+        else if(c == "O"){
+            window.alert("You lose...")
+        }
+        else {
+            window.alert("Draw")
+        }
+        location.reload();
     }
-
+    
 }
 
 
@@ -83,67 +155,99 @@ function buttonclick1(btnid){
 
 }
 function buttonclick2(btnid){
-    document.getElementById("btn2").style.backgroundImage = "url('x.png')";
-    clicked2 = true
-    turn = 2
-    allturns +=1
-    box2 = "X"
+    if(clicked2 == false) {
+        document.getElementById("btn2").style.backgroundImage = "url('x.png')";
+        clicked2 = true
+        turn = 2
+        allturns +=1
+        box2 = "X"
+    } else {
+
+    }
 }
 
 function buttonclick3(btnid){
-    document.getElementById("btn3").style.backgroundImage = "url('x.png')";
-    clicked3 = true
-    turn = 2
-    allturns +=1
-    box3 = "X"
+    if(clicked3 == false) {
+        document.getElementById("btn3").style.backgroundImage = "url('x.png')";
+        clicked3 = true
+        turn = 2
+        allturns +=1
+        box3 = "X"
+    } else {
+        window.alert("alrdy clicked")
+    }
 }
 
 function buttonclick4(btnid){
-    document.getElementById("btn4").style.backgroundImage = "url('x.png')";
-    clicked4 = true
-    turn = 2
-    allturns +=1
-    box4 = "X"
+    if(clicked4 == false) {
+        document.getElementById("btn4").style.backgroundImage = "url('x.png')";
+        clicked4 = true
+        turn = 2
+        allturns +=1
+        box4 = "X"
+    } else {
+        window.alert("alrdy clicked")
+    }
 }
 
 function buttonclick5(btnid){
-    document.getElementById("btn5").style.backgroundImage = "url('x.png')";
-    clicked5 = true
-    turn = 2
-    allturns +=1
-    box5 = "X"
+    if(clicked5 == false) {
+        document.getElementById("btn5").style.backgroundImage = "url('x.png')";
+        clicked5 = true
+        turn = 2
+        allturns +=1
+        box5 = "X"
+    } else {
+        window.alert("alrdy clicked")
+    }
 }
 
 function buttonclick6(btnid){
-    document.getElementById("btn6").style.backgroundImage = "url('x.png')";
-    clicked6 = true
-    turn = 2
-    allturns +=1
-    box6 = "X"
+    if(clicked6 == false) {
+        document.getElementById("btn6").style.backgroundImage = "url('x.png')";
+        clicked6 = true
+        turn = 2
+        allturns +=1
+        box6 = "X"
+    } else {
+        window.alert("alrdy clicked")
+    }
 }
 
 function buttonclick7(btnid){
-    document.getElementById("btn7").style.backgroundImage = "url('x.png')";
-    clicked7 = true
-    turn = 2
-    allturns +=1
-    box7 = "X"
+    if(clicked7 == false) {
+        document.getElementById("btn7").style.backgroundImage = "url('x.png')";
+        clicked7 = true
+        turn = 2
+        allturns +=1
+        box7 = "X"
+    } else {
+        window.alert("alrdy clicked")
+    }
 }
 
 function buttonclick8(btnid){
-    document.getElementById("btn8").style.backgroundImage = "url('x.png')";
-    clicked8 = true
-    turn = 2
-    allturns +=1
-    box8 = "X"
+    if(clicked8 == false) {
+        document.getElementById("btn8").style.backgroundImage = "url('x.png')";
+        clicked8 = true
+        turn = 2
+        allturns +=1
+        box8 = "X"
+    } else {
+        window.alert("alrdy clicked")
+    }
 }
 
 function buttonclick9(btnid){
-    document.getElementById("btn9").style.backgroundImage = "url('x.png')";
-    clicked9 = true
-    turn = 2
-    allturns +=1
-    box9 = "X"
+    if(clicked9 == false) {
+        document.getElementById("btn9").style.backgroundImage = "url('x.png')";
+        clicked9 = true
+        turn = 2
+        allturns +=1
+        box9 = "X"
+    } else {
+        window.alert("alrdy clicked")
+    }
 }
 
 var bb = setInterval(random,100);
